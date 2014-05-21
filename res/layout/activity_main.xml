@@ -15,10 +15,27 @@
         android:layout_height="40dp" >
     </ProgressBar>
 
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp" />
+
     <TextView
         android:id="@+id/tv_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progress"
+        android:layout_alignTop="@+id/progress"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/tv_test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progress1"
+        android:layout_alignTop="@+id/progress1"
         android:text="@string/hello_world" />
 
     <Button
@@ -27,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/progress"
         android:layout_below="@+id/progress"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="33dp"
         android:text="Start" />
 
 </RelativeLayout>
